@@ -100,9 +100,9 @@ int main(void)
 	  // Pauza ce imati trajanje od 5 ms - Broj slova u prezimenu
 
 	  for(int i = 0; i < 10; i++){ // Prva sekvenca se ponavlja onoliko puta koliko ima slova u imenu
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
-		  HAL_Delay(10); // Impuls - onoliko ms koliko ima slova u imenu
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+		  HAL_Delay(10); // Impuls - onoliko ms koliko ima slova u imenu
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
 		  HAL_Delay(5);  // Pauza - onoliko ms koliko ima slova u prezimenu
 	  }
 
@@ -112,9 +112,9 @@ int main(void)
 	  // Trajanje impulsa i pauze ce se sada obrnuti. Impuls ce trajati 5 ms a Pauza 10 ms
 
 	  for(int i = 0; i < 5; i++){ // Druga sekvenca se ponavlja onoliko puta koliko ima slova u prezimenu
-	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
-	  	  HAL_Delay(5);  // Impuls - onoliko ms koliko ima slova u prezimenu
 	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+	  	  HAL_Delay(5);  // Impuls - onoliko ms koliko ima slova u prezimenu
+	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
 	  	  HAL_Delay(10); // Pauza - onoliko ms koliko ima slova u imenu
 	  }
     /* USER CODE BEGIN 3 */
@@ -174,7 +174,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PB3 */
   GPIO_InitStruct.Pin = GPIO_PIN_3;

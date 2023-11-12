@@ -118,16 +118,16 @@ int main(void)
  800015e:	2300      	movs	r3, #0
  8000160:	607b      	str	r3, [r7, #4]
  8000162:	e012      	b.n	800018a <main+0x3e>
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
- 8000164:	2200      	movs	r2, #0
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+ 8000164:	2201      	movs	r2, #1
  8000166:	2108      	movs	r1, #8
  8000168:	4816      	ldr	r0, [pc, #88]	; (80001c4 <main+0x78>)
  800016a:	f000 fc09 	bl	8000980 <HAL_GPIO_WritePin>
 		  HAL_Delay(10); // Impuls - onoliko ms koliko ima slova u imenu
  800016e:	200a      	movs	r0, #10
  8000170:	f000 f982 	bl	8000478 <HAL_Delay>
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
- 8000174:	2201      	movs	r2, #1
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
+ 8000174:	2200      	movs	r2, #0
  8000176:	2108      	movs	r1, #8
  8000178:	4812      	ldr	r0, [pc, #72]	; (80001c4 <main+0x78>)
  800017a:	f000 fc01 	bl	8000980 <HAL_GPIO_WritePin>
@@ -150,16 +150,16 @@ int main(void)
  8000190:	2300      	movs	r3, #0
  8000192:	603b      	str	r3, [r7, #0]
  8000194:	e012      	b.n	80001bc <main+0x70>
-	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
- 8000196:	2200      	movs	r2, #0
+	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+ 8000196:	2201      	movs	r2, #1
  8000198:	2108      	movs	r1, #8
  800019a:	480a      	ldr	r0, [pc, #40]	; (80001c4 <main+0x78>)
  800019c:	f000 fbf0 	bl	8000980 <HAL_GPIO_WritePin>
 	  	  HAL_Delay(5);  // Impuls - onoliko ms koliko ima slova u prezimenu
  80001a0:	2005      	movs	r0, #5
  80001a2:	f000 f969 	bl	8000478 <HAL_Delay>
-	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
- 80001a6:	2201      	movs	r2, #1
+	  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
+ 80001a6:	2200      	movs	r2, #0
  80001a8:	2108      	movs	r1, #8
  80001aa:	4806      	ldr	r0, [pc, #24]	; (80001c4 <main+0x78>)
  80001ac:	f000 fbe8 	bl	8000980 <HAL_GPIO_WritePin>
@@ -312,8 +312,8 @@ static void MX_GPIO_Init(void)
  8000282:	683b      	ldr	r3, [r7, #0]
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
- 8000284:	2201      	movs	r2, #1
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
+ 8000284:	2200      	movs	r2, #0
  8000286:	2108      	movs	r1, #8
  8000288:	480b      	ldr	r0, [pc, #44]	; (80002b8 <MX_GPIO_Init+0x78>)
  800028a:	f000 fb79 	bl	8000980 <HAL_GPIO_WritePin>
