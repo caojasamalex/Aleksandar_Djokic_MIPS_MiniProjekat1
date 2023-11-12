@@ -9,7 +9,7 @@
 Potrebno je realizovati mikrokontrolersko kolo koje će vršiti kontolu paljenja/gašenja led diode.
 
 Odabir Port-a vrši se na sledeći način:\
-**1. Ukoliko ima više samoglasnika u imenu i prezimenu, koristićemo Port A mikrokontrolera**
+**1. Ukoliko ima više samoglasnika u imenu i prezimenu, koristićemo Port A mikrokontrolera**\
 **2. Ukoliko ima više suglasnika u imenu i prezimenu, koristićemo Port B mikrokontrolera**
 
 U mom slučaju (Aleksandar Đokić) koristićemo Port B s obzirom da u mom imenu i prezimenu ima više suglasnika nego samoglasnika.
