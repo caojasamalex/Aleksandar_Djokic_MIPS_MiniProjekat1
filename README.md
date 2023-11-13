@@ -32,8 +32,8 @@ Način rada diode određen je tako da simulira PWM (Pulse Width Modulation)
 Širina pauze u prvom taktu - **Broj slova u prezimenu u milisekundama** - 5 ms
 
 **Broj ponavljanja drugog takta jednak je broju slova u prezimenu - **U mom slučaju 5****
-#### **Prvi takt**
+#### **Drugi takt**
 U ovom taktu se rotiraju širine impulsa i pauze prethodnog takta
 
-Širina impulsa u prvom taktu - **Broj slova u prezimenu u milisekundama** - 5 ms\
-Širina pauze u prvom taktu - **Broj slova u imenu u milisekundama** - 10ms
+Širina impulsa u drugom taktu - **Broj slova u prezimenu u milisekundama** - 5 ms\
+Širina pauze u drugom taktu - **Broj slova u imenu u milisekundama** - 10ms
